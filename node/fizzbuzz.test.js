@@ -1,7 +1,8 @@
-const fizzbuzz = require('./fizzbuzz');
+const {test, expect } = require('@jest/globals')
+const fizzbuzz = require('./fizzbuzz')
 
 test('print zero whith zero', () => {
-  expect(fizzbuzz(0)).toBe(0);
+  expect(fizzbuzz(0)).toBe(0)
 });
 
 test('print same number on 1, 2 and 4', () => {
@@ -12,16 +13,16 @@ test('print same number on 1, 2 and 4', () => {
 
 test('print Fizz when number is multiple of 3 but not multiple of 5', () => {
   expect(fizzbuzz(3)).toBe('Fizz');
-  fail('Add more expects for Fizz')
+  expect('Add more expects for Fizz').toBe(false)
 });
 
 test('print Buzz when number is multiple of 5 but not multiple of 3', () => {
   expect(fizzbuzz(5)).toBe('Buzz');
-  fail('Add more expects for Buzz')
+  expect('Add more expects for Buzz').toBe(false);
 });
 
 test('print FizBuzz when number is multiple of 3 and 5', () => {
-  fail('To be done')
+  expect('To be done').toBe(false);
 });
 
 

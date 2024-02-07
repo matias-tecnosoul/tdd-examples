@@ -2,4 +2,4 @@ function fizzbuzz(n) {
   return n;
 }
 
-module.exports = fizzbuzz;
+module.exports = fizzbuzz
