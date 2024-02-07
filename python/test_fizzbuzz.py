@@ -1,6 +1,7 @@
 import pytest
 from fizzbuzz import fizzbuzz
 
+
 def test_with_zero():
     assert fizzbuzz(0) == 0
 

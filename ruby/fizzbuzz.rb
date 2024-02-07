@@ -1,4 +1,5 @@
-def fizzbuzz(n)
-  return 'Fizz' if ! n.zero? && n % 3 == 0
-  return n
+def fizzbuzz(number)
+  return 'Fizz' if ! number.zero? && (number % 3).zero?
+
+  number
 end
